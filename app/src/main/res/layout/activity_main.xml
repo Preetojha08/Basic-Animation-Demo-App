@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:layout_marginTop="10dp"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Basic Animation Example"
+        android:id="@+id/textView"
+        android:gravity="center"
+        android:layout_marginTop="30dp"
+        android:textColor="#00318c"
+        android:textSize="40dp"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#000"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:layout_marginTop="20dp"
+        android:textSize="18sp"
+        android:text="Animation Definition"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="5dp"
+        android:textColor="#000"
+        android:layout_marginRight="8dp"
+        android:layout_marginLeft="8dp"
+        android:textSize="15sp"
+        android:textStyle="italic"
+        android:gravity="center"
+        android:text="The Android supports animation which can add visual cues that notify users about what's going on in your app. Animation in android is possible from many ways. Animations also add a polished look to your app, which gives it a higher quality look and feel."
+        />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="36dp"
+        android:src="@drawable/back" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_zoom"
+            android:layout_width="wrap_content"
+            android:background="#000"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:layout_height="wrap_content"
+            android:text="Zoom"/>
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="clockwise"
+            android:background="#000"
+            android:layout_marginRight="5dp"
+            android:textColor="#fff"
+            android:id="@+id/button_clockwise" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="fade"
+            android:background="#000"
+            android:textColor="#fff"
+            android:id="@+id/button_fade" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="5dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_blink"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:text="blink" />
+
+        <Button
+            android:id="@+id/button_move"
+            android:layout_width="wrap_content"
+            android:background="#000"
+            android:textColor="#fff"
+            android:layout_marginRight="5dp"
+            android:layout_height="wrap_content"
+            android:text="move" />
+
+        <Button
+            android:id="@+id/button_slide"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#000"
+            android:textColor="#fff"
+            android:text="slide" />
+
+    </LinearLayout>
+
+
+
+</LinearLayout>
